@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Word Count | Thoriq As</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Words Count</h1>
+      <textarea
+        name="word-input"
+        id="word-input"
+        cols="30"
+        rows="10"
+        placeholder="Enter Word Here..."
+        value
+        required
+      ></textarea>
+
+      <div class="btn-container">
+        <button type="submit" class="btn" id="btn">Submit</button>
+      </div>
+      <div class="result-container">
+        <div class="result">Letter : <span id="result1"></span></div>
+        <div class="result">Number : <span id="result2"></span></div>
+        <div class="result">Words : <span id="result3"></span></div>
+        <div class="result">Space : <span id="result4"></span></div>
+      </div>
+    </div>
+
+    <script src="count.js"></script>
+  </body>
+</html>
