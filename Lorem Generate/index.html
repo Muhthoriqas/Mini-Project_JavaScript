@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lorem Generate HTML</title>
+  </head>
+  <body>
+    <section class="section-center">
+      <h3>LOREM IPSUM GENERATE</h3>
+      <form class="lorem-form">
+        <label for="amount">paragraphs</label>
+        <input
+          type="number"
+          name="amount"
+          id="input-amount"
+          min="1"
+          max="10"
+          onkeyup="if(value<0) value=1; if(value>5) value=5"
+          ;
+        />
+        <button type="submit" class="btn" id="btn">generate</button>
+        <button type="submit" class="btn-clear" id="btn-clear">Clear</button>
+      </form>
+      <article class="lorem-text" id="lorem-text"></article>
+    </section>
+
+    <script src="lorem.js"></script>
+  </body>
+</html>

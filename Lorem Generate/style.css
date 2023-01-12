@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 40rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+h3 {
+  color: #212121;
+  font-size: 30px;
+}
+
+.btn,
+.btn-clear {
+  text-transform: uppercase;
+  background: #212121;
+  color: #fff;
+  padding: 0.375rem 0.75rem;
+  display: inline-block;
+  transition: all 0.2s linear;
+  font-size: 0.875rem;
+  border: 2px solid #212121;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+.btn-clear {
+  background: #ee4b2b;
+  margin: 0px 5px;
+  border: 2px solid #ee4b2b;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #ee4b2b;
+  border-color: #ee4b2b;
+}
+
+.lorem-form {
+  text-transform: capitalize;
+  letter-spacing: 1;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+label {
+  font-size: 1.25rem;
+  color: #212121;
+}
+input {
+  padding: 0.25rem 0.5rem;
+
+  width: 4rem;
+  border-radius: 6px;
+  border: none;
+  margin: 0 2rem 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.result {
+  margin-bottom: 2rem;
+}
+
+form {
+  background: #ccc;
+  padding: 10px 0px;
+  border-radius: 8px;
+}

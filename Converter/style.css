@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-container {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  margin-top: -50px;
+  margin-left: -50px;
+  background-color: #ccc;
+  padding: 30px;
+  border-radius: 10px;
+  color: #313131;
+  font-size: 18px;
+}
+p {
+  margin: 8px 0px;
+}
+input {
+  margin: 5px 0;
+  display: block;
+}
+input[type="number"] {
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  text-indent: 10px;
+  font-size: 15px;
+}
+.input-container {
+  margin: 8px 0px;
+  justify-content: space-between;
+  display: flex;
+  background-color: #fff;
+  padding: 3px 8px;
+  border-radius: 8px;
+}
+
+button {
+  padding: 8px;
+  width: 100%;
+  margin: 5px 0px;
+  border-radius: 8px;
+  border: transparent;
+  background-color: #414141;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.result {
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 8px 0px;
+  display: none;
+  background: #ee4b2b;
+}
