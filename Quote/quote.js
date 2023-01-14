@@ -24,21 +24,20 @@ const hideLoading = () => {
   loader.classList.remove("display");
 };
 
-async function updateQuote() {
-  // Fetch a random quote from the Quotable API
-  const response = await fetch("https://api.quotable.io/random");
-  const data = await response.json();
-
-  if (response.ok) {
-    // Update DOM elements
+const updateQuote = async () => {
+  try {
+    const response = await fetch("https://api.quotable.io/random");
+    const data = await response.json();
     quote.textContent = data.content;
     person.textContent = data.author;
     hideLoading();
-  } else {
-    quote.textContent = "An error occured";
+  } catch (error) {
+    quote.textContent = "An Error Occured";
+    quote.style.color = "#D22B2B";
+    hideLoading();
     console.log(data);
   }
-}
+};
 btn.addEventListener("click", displayLoading);
 
 btn.addEventListener("click", updateQuote);
