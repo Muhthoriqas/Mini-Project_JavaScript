@@ -7,24 +7,26 @@ result.addEventListener("click", () => {
 
 // Api Source Link : https://opencagedata.com/
 const onSuccess = async (userPosition) => {
-  let { latitude, longitude } = userPosition.coords;
-  let myApi = config.myApi;
+  try {
+    let { latitude, longitude } = userPosition.coords;
+    let myApi = config.myApi;
 
-  const response = await fetch(
-    "https://api.opencagedata.com/geocode/v1/json?q=" +
-      latitude +
-      "+" +
-      longitude +
-      "&key=" +
-      myApi
-  );
-  if (!response.ok) {
-    throw new Error(`HTTP error! status: ${response.status}`);
+    const response = await fetch(
+      "https://api.opencagedata.com/geocode/v1/json?q=" +
+        latitude +
+        "+" +
+        longitude +
+        "&key=" +
+        myApi
+    );
+
+    const data = await response.json();
+    let allDetails = data.results[0].components;
+    let { city, state, country } = allDetails;
+    result.innerText = `${city}, ${state}, ${country}`;
+  } catch (error) {
+    result.innerText = "Something went wrong";
   }
-  const data = await response.json();
-  let allDetails = data.results[0].components;
-  let { city, state, country } = allDetails;
-  result.innerText = `${city}, ${state}, ${country}`;
 };
 
 const onFailure = (error) => {
