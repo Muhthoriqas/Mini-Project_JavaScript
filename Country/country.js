@@ -1,16 +1,15 @@
 var inputUser = document.getElementById("county-input");
 var resultDisplay = document.getElementById("result");
 const btn = document.getElementById("btn");
-const body = document.querySelector("#body");
-const loader = document.querySelector("#loading");
+const body = document.getElementById("body");
+const loader = document.getElementById("loading");
 
 const displayLoading = () => {
   body.style.opacity = 0.5;
   loader.classList.add("display");
-  // to stop loading after 5 second
   setTimeout(() => {
     loader.classList.remove("display");
-  }, 5000);
+  }, 10000);
 };
 
 const hideLoading = () => {
