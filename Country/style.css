@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.main-container {
+  position: absolute;
+  top: 35%;
+  left: 38%;
+  margin-top: -50px;
+  margin-left: -50px;
+  background-color: #ccc;
+  padding: 30px;
+  border-radius: 10px;
+  color: #313131;
+  font-size: 18px;
+}
+
+.input-container {
+  margin: 8px 0px;
+  background-color: #fff;
+  padding: 3px 8px;
+  border-radius: 8px;
+}
+
+input {
+  margin: 5px 0;
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  text-indent: 10px;
+  font-size: 15px;
+}
+
+button {
+  padding: 8px;
+  width: 100%;
+  margin: 5px 0px;
+  border-radius: 8px;
+  border: transparent;
+  background-color: #414141;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.result {
+  text-align: center;
+  color: #ee4b2b;
+}
+
+#loading {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 3rem;
+  height: 3rem;
+  border: 5px solid #f3f3f3;
+  border-top: 6px solid #ee4b2b;
+  border-radius: 100%;
+  margin: auto;
+  visibility: hidden;
+  animation: spin 1s infinite linear;
+}
+
+#loading.display {
+  visibility: visible;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
