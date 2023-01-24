@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meme Generator</title>
+  </head>
+  <body id="body">
+    <div class="main-container">
+      <h1><center id="title">Meme Generator</center></h1>
+      <div class="child">
+        <div class="result" id="result">
+          <img
+            src=""
+            alt="Result Image"
+            width="400px"
+            height="300px"
+            class="img-result"
+            id="img-result"
+          />
+        </div>
+        <div id="loading"></div>
+        <button id="btn" class="btn">Generate Meme</button>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="meme.js"></script>
+  </body>
+</html>
