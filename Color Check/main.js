@@ -2,7 +2,7 @@ const targetObject = document.getElementById("targetObject");
 const inputHex = document.getElementById("inputHexa");
 
 const ubahLatar = (inputColor) => {
-  inputColor = inputHex.value;
+  inputColor = inputHex.value.toLowerCase();
 
   // Cek CSS Color like red, green, blue , etc
   var s = new Option().style;
