@@ -1,4 +1,3 @@
 # Mini Project JavaScript
 
-Just For Practice :)
- 
+Just For Practice 
